@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+sudo ./rancher-dns --debug \
+   --listen 0.0.0.0:53 \
+   --ttl 600 \
+   --ndots 0     \
+   --pid-file /var/log/rancher-dns.log \
+   --answers /etc/rancher-dns/answers.json
